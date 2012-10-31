@@ -10,16 +10,12 @@ Portable Object Format(POF) is a platform-independent serialization format. It a
 
 Coherence offers many kinds of cache types such as Distributed(or Partitioned), Replicated, Optimistic, Near, Local and Remote Cache. Distributed cache is defined as a collection of data that is distributed (or, partitioned) across any number of cluster nodes such that exactly one node in the cluster is responsible for each piece of data in the cache, and the responsibility is distributed (or, load-balanced) among the cluster nodes. Please note that distributed cache type has been used in this article. Since the other cache-types are not in the scope of this article, please look at the References section or Coherence Reference document. Their configurations are very similar to distributed cache configuration.
 
-How to distribute Spring Beans by using Coherence Article covering Explicit locking – Java Standart Serialization is suggested to compare two different implementations(EntryProcessor – Portable Object Format(POF) and Explicit locking – Java Standart Serialization).
+How to distribute Spring Beans by using Coherence Article covering Explicit locking ï¿½ Java Standart Serialization is suggested to compare two different implementations(EntryProcessor ï¿½ Portable Object Format(POF) and Explicit locking ï¿½ Java Standart Serialization).
 
 In this article, a new cluster called OTV has been created and a spring bean has been distributed by using a cache object called "user-cache". It has been distributed between two members of the cluster.
 
-Let us look at implementation of AbsctractProcessor implementing EntryProcessor Interface and PortableObject Interface for Spring Beans’ distribution between JVMs in a cluster.
+Let us look at implementation of AbsctractProcessor implementing EntryProcessor Interface and PortableObject Interface for Spring Beansï¿½ distribution between JVMs in a cluster.
 
 Used Technologies :
 
-JDK 1.6.0_31
-Spring 3.1.1
-Coherence 3.7.0
-SolarisOS 5.10
-Maven 3.0.2
+JDK 1.6.0_31, Spring 3.1.1, Coherence 3.7.0, SolarisOS 5.10 and Maven 3.0.2
